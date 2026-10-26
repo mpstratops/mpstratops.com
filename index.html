@@ -3,84 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP StratOps | Operaciones Estratégicas y Gestión de PMO</title>
+    <title>Miyi Paola Sotelo P. | Consultoría y Gestión de Proyectos</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        /* Fondo con textura artística y sutil */
-        .bg-artistic {
-            background-color: #F5F1E9;
-            background-image: 
-                radial-gradient(at 10% 20%, rgba(166, 75, 69, 0.05) 0px, transparent 50%),
-                radial-gradient(at 90% 80%, rgba(36, 59, 83, 0.05) 0px, transparent 50%);
-        }
+        .bg-marfil { background-color: #F5F1E9; }
+        .text-caoba { color: #A64B45; }
+        .bg-caoba { background-color: #A64B45; }
+        .text-azul { color: #243B53; }
+        .bg-azul { background-color: #243B53; }
+        .border-gris-calido { border-color: #D8D4CF; }
     </style>
 </head>
-<body class="bg-artistic text-[#243B53] antialiased selection:bg-[#A64B45] selection:text-white">
+<body class="bg-marfil text-[#243B53] antialiased selection:bg-[#A64B45] selection:text-white">
 
-    <!-- Header / Navegación -->
-    <header class="sticky top-0 z-50 bg-[#F5F1E9]/90 backdrop-blur-md border-b border-[#D8D4CF]/60">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-tight text-[#243B53] flex items-center gap-2">
-                MP StratOps<span class="w-2 h-2 rounded-full bg-[#A64B45]"></span>
+    <!-- Header / Navbar Editorial -->
+    <header class="sticky top-0 z-50 bg-[#F5F1E9]/90 backdrop-blur-md border-b border-[#D8D4CF]">
+        <div class="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between">
+            <a href="#" class="group">
+                <span class="block text-xl font-bold tracking-tight text-[#243B53]">
+                    Miyi Paola Sotelo P.<span class="text-[#A64B45]">.</span>
+                </span>
+                <span class="block text-xs uppercase tracking-widest text-[#59636E]">Program & PMO Manager</span>
             </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#59636E]">
-                <a href="#sobre-mi" class="hover:text-[#A64B45] transition-colors">Sobre mí</a>
-                <a href="#trayectoria" class="hover:text-[#A64B45] transition-colors">Trayectoria & PMO</a>
-                <a href="#servicios" class="hover:text-[#A64B45] transition-colors">Portafolio de Servicios</a>
-                <a href="mailto:pmo.sotelo@gmail.com" class="px-5 py-2.5 rounded-full bg-[#243B53] text-[#F5F1E9] hover:bg-[#A64B45] transition-all shadow-sm">Envíame un correo</a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-[#59636E]">
+                <a href="#sobre-mi" class="hover:text-[#243B53] transition-colors">Sobre mí</a>
+                <a href="#servicios" class="hover:text-[#243B53] transition-colors">Portafolio</a>
+                <a href="#trayectoria" class="hover:text-[#243B53] transition-colors">Trayectoria</a>
+                <a href="#contacto" class="px-6 py-2.5 rounded-full bg-[#243B53] text-[#F5F1E9] hover:bg-[#A64B45] transition-all text-xs tracking-wider uppercase font-semibold">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section con toque artístico -->
-    <section class="relative py-28 md:py-36 overflow-hidden">
-        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#D8D4CF] text-[#A64B45] text-xs font-semibold tracking-wider uppercase shadow-xs">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#A64B45]"></span>
-                Miyi Paola Sotelo P. • Program & PMO Manager
+    <!-- Hero Section Artístico / Editorial -->
+    <section class="py-24 md:py-36 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#D8D4CF] text-[#A64B45] text-xs font-semibold tracking-widest uppercase shadow-xs">
+                <span class="w-2 h-2 rounded-full bg-[#059669]"></span>
+                Estrategia, Procesos y PMO en Latinoamérica
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-[#243B53] leading-tight">
-                MP StratOps
+            
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight text-[#243B53] leading-[1.1]">
+                Diseño y estructura para <span class="font-normal italic text-[#A64B45]">organizaciones con propósito</span>.
             </h1>
-            <p class="text-xl md:text-2xl text-[#59636E] font-light max-w-2xl mx-auto leading-relaxed">
-                Acompaño a organizaciones a <span class="text-[#A64B45] font-normal italic">convertir sus tareas e ideas</span> en procesos y proyectos medibles y alcanzables.
+            
+            <p class="text-lg md:text-xl text-[#59636E] font-light max-w-2xl mx-auto leading-relaxed">
+                Acompaño a organizaciones a convertir sus tareas e ideas en procesos y proyectos medibles y alcanzables.
             </p>
-            <div class="flex flex-wrap justify-center gap-4 pt-4">
-                <a href="mailto:pmo.sotelo@gmail.com" class="px-8 py-4 rounded-full bg-[#243B53] text-[#F5F1E9] font-medium hover:bg-[#A64B45] transition-all shadow-md flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                    Envíame un correo
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:pmo.sotelo@gmail.com" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#243B53] text-[#F5F1E9] font-medium hover:bg-[#A64B45] transition-all shadow-md text-sm">
+                    Envíame un correo directo
                 </a>
-                <a href="#sobre-mi" class="px-8 py-4 rounded-full border border-[#D8D4CF] bg-white/60 text-[#243B53] font-medium hover:bg-white transition-all">
-                    Conóceme más
+                <a href="#sobre-mi" class="w-full sm:w-auto px-8 py-4 rounded-full border border-[#D8D4CF] bg-white text-[#243B53] font-medium hover:bg-[#F5F1E9] transition-all text-sm">
+                    Conoce mi perfil
                 </a>
             </div>
         </div>
-        <!-- Elemento decorativo de fondo cultural / orgánico -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-[#A64B45]/5 to-[#243B53]/5 rounded-full blur-3xl pointer-events-none"></div>
     </section>
 
-    <!-- Sección Sobre Mí (Con foto perfectamente centrada enfocando la cabeza) -->
-    <section id="sobre-mi" class="py-24 bg-white border-y border-[#D8D4CF]/60 shadow-xs relative">
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="py-24 bg-white border-y border-[#D8D4CF]">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
-            <!-- Foto Corporativa con object-top para que no se corte la cabeza -->
+            
+            <!-- Foto Corporativa Centrada -->
             <div class="md:col-span-5 flex justify-center">
                 <div class="relative w-72 h-80 md:w-80 md:h-96 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-[#F5F1E9] bg-[#D8D4CF]">
                     <img src="Corporativa_2.jpg" alt="Miyi Paola Sotelo P." class="w-full h-full object-cover object-top scale-105">
-                    <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-[2rem]"></div>
                 </div>
             </div>
-            <!-- Perfil Profesional -->
+
+            <!-- Contenido del Perfil -->
             <div class="md:col-span-7 space-y-6">
-                <div class="space-y-2">
-                    <span class="text-xs uppercase tracking-widest text-[#A64B45] font-semibold">Visión Holística y Cultural</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-[#243B53]">Sobre mí</h2>
-                    <div class="w-12 h-1 bg-[#A64B45] rounded-full"></div>
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-[#A64B45] font-semibold">Perfil Profesional</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#243B53] mt-1">Sobre mí</h2>
+                    <div class="w-12 h-1 bg-[#A64B45] mt-3 rounded-full"></div>
                 </div>
-                <div class="text-lg text-[#59636E] leading-relaxed space-y-4 font-light">
-                    <p class="font-normal text-[#243B53] text-xl">
+
+                <div class="text-base sm:text-lg text-[#59636E] leading-relaxed space-y-4 font-light">
+                    <p class="font-normal text-[#243B53]">
                         Soy profesional en Finanzas y Relaciones Internacionales, especialista en Gerencia de Proyectos y magíster en Planificación y Gestión de Procesos Empresariales.
                     </p>
                     <p>
@@ -89,123 +95,96 @@
                     <p>
                         Mi enfoque combina visión estratégica y trabajo práctico para transformar la operación interna en capacidades sostenibles, impulsando el cumplimiento de metas mediante indicadores claros y tableros de control.
                     </p>
-                    <p class="p-5 rounded-2xl bg-[#F5F1E9] border-l-4 border-[#A64B45] text-[#243B53] text-sm font-normal border border-[#D8D4CF]">
-                        Especializada en transformar ideas organizativas y tareas cotidianas en proyectos corporativos con alto impacto, sensibilidad cultural y resultados medibles.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Trayectoria y Capacidades -->
-    <section id="trayectoria" class="py-24 bg-artistic">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
-            <div class="text-center space-y-3">
-                <span class="text-xs uppercase tracking-widest text-[#A64B45] font-semibold">Respaldo y Experiencia Global</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-[#243B53]">Trayectoria y Capacidades Corporativas</h2>
-                <p class="text-[#59636E]">Liderazgo en PMO, planeación estratégica y gestión de innovación en Latinoamérica.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 items-stretch">
-                <!-- Tarjeta 1 -->
-                <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-[#D8D4CF] space-y-6 flex flex-col justify-between hover:shadow-md transition-all">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-2xl bg-[#F5F1E9] flex items-center justify-center text-[#A64B45] font-bold text-xl border border-[#D8D4CF]">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#243B53]">Liderazgo en PMO y Organizaciones</h3>
-                        <p class="text-[#59636E] leading-relaxed text-sm">
-                            Experiencia directiva y consultiva en empresas privadas y entidades públicas (como Directora de PMO en Roccap S.A.S., evaluadora técnica en MinCiencias, y gestión con la Cruz Roja Colombiana y SEI).
-                        </p>
-                        <ul class="space-y-2 text-sm text-[#59636E] list-disc list-inside">
-                            <li>Diseño e implementación de PMO corporativas.</li>
-                            <li>Gestión integral del ciclo de vida de portafolios e indicadores de impacto.</li>
-                            <li>Articulación de stakeholders y equipos multidisciplinarios.</li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-[#D8D4CF]/50 text-xs text-[#59636E]">
-                        Sede en CABA, Argentina • Proyectos en Latinoamérica
-                    </div>
-                </div>
-
-                <!-- Tarjeta 2 -->
-                <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-[#D8D4CF] space-y-6 flex flex-col justify-between hover:shadow-md transition-all">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-2xl bg-[#F5F1E9] flex items-center justify-center text-[#A64B45] font-bold text-xl border border-[#D8D4CF]">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#243B53]">Estructuración, Procesos y Finanzas</h3>
-                        <p class="text-[#59636E] leading-relaxed text-sm">
-                            Dominio técnico enfocado en transformar la complejidad operativa en esquemas claros de gestión financiera, presupuestaria y metodológica.
-                        </p>
-                        <ul class="space-y-2 text-sm text-[#59636E] list-disc list-inside">
-                            <li>Planificación presupuestaria y control mediante tableros corporativos (Dashboards).</li>
-                            <li>Diseño de modelos de innovación y estructuración de procesos empresariales.</li>
-                            <li>Búsqueda activa de fondos y postulación a convocatorias de financiamiento.</li>
-                        </ul>
-                    </div>
-                    <div class="pt-4 border-t border-[#D8D4CF]/50 text-xs text-[#59636E]">
-                        Herramientas: ClickUp, Monday, Notion, Trello, Google Workspace
+                    <div class="p-6 rounded-2xl bg-[#F5F1E9] border-l-4 border-[#A64B45] text-[#243B53] text-sm font-normal border border-[#D8D4CF]">
+                        Especializada en transformar ideas organizativas y tareas cotidianas en proyectos corporativos con alto impacto y resultados medibles.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Portafolio de Servicios -->
-    <section id="servicios" class="py-24 bg-white border-y border-[#D8D4CF]/60">
-        <div class="max-w-6xl mx-auto px-6 space-y-12">
-            <div class="text-center space-y-3">
+    <!-- Portafolio de Servicios -->
+    <section id="servicios" class="py-24 bg-[#F5F1E9]">
+        <div class="max-w-6xl mx-auto px-6 space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
                 <span class="text-xs uppercase tracking-widest text-[#A64B45] font-semibold">Oferta de Valor</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-[#243B53]">Portafolio de Servicios</h2>
-                <p class="text-[#59636E]">Estructuración a la medida para alinear tus procesos con los objetivos estratégicos.</p>
+                <p class="text-[#59636E]">Soluciones concebidas para crear orden, eficiencia y crecimiento sostenible.</p>
             </div>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-[#F5F1E9]/60 p-8 rounded-3xl border border-[#D8D4CF] hover:shadow-md transition-shadow space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-[#A64B45] font-bold text-xl border border-[#D8D4CF]">01</div>
-                    <h3 class="text-xl font-bold text-[#243B53]">Diseño e Implementación de PMO</h3>
-                    <p class="text-[#59636E] text-sm leading-relaxed">
-                        Creamos la Oficina de Gestión de Proyectos de tu compañía, estandarizando metodologías, tableros de control y flujos de trabajo eficientes.
-                    </p>
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-[#D8D4CF] shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-[#F5F1E9] flex items-center justify-center text-[#059636] font-bold text-lg border border-[#D8D4CF]">
+                            <i class="fa-solid fa-sitemap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#243B53]">Estructuración de Procesos</h3>
+                        <p class="text-[#59636E] text-sm leading-relaxed">
+                            Mapeo, diagnóstico y diseño de flujos operativos claros para eliminar cuellos de botella y estandarizar la operación diaria.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[#D8D4CF]/40 text-xs font-semibold text-[#059636] flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-[#059636]"></span> Eficiencia operativa y KPIs
+                    </div>
                 </div>
-                <div class="bg-[#F5F1E9]/60 p-8 rounded-3xl border border-[#D8D4CF] hover:shadow-md transition-shadow space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-[#A64B45] font-bold text-xl border border-[#D8D4CF]">02</div>
-                    <h3 class="text-xl font-bold text-[#243B53]">Estructuración de Procesos</h3>
-                    <p class="text-[#59636E] text-sm leading-relaxed">
-                        Ordenamos la operación interna, diseñando procesos y modelos institucionales orientados a la innovación, la eficiencia y la escalabilidad.
-                    </p>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-[#D8D4CF] shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-[#F5F1E9] flex items-center justify-center text-[#A64B45] font-bold text-lg border border-[#D8D4CF]">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#243B53]">Diseño y Gestión de PMO</h3>
+                        <p class="text-[#59636E] text-sm leading-relaxed">
+                            Creación de Oficinas de Gestión de Proyectos a la medida, gobernanza de portafolios y control presupuestario mediante tableros.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[#D8D4CF]/40 text-xs font-semibold text-[#A64B45] flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-[#A64B45]"></span> Gobernanza y seguimiento
+                    </div>
                 </div>
-                <div class="bg-[#F5F1E9]/60 p-8 rounded-3xl border border-[#D8D4CF] hover:shadow-md transition-shadow space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-[#A64B45] font-bold text-xl border border-[#D8D4CF]">03</div>
-                    <h3 class="text-xl font-bold text-[#243B53]">Gestión de Portafolios y Fondos</h3>
-                    <p class="text-[#59636E] text-sm leading-relaxed">
-                        Planificación presupuestaria, control de indicadores clave (KPIs) y formulación de propuestas estratégicas para convocatorias e incentivos.
-                    </p>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-[#D8D4CF] shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-[#F5F1E9] flex items-center justify-center text-[#243B53] font-bold text-lg border border-[#D8D4CF]">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#243B53]">Formulación y Fondos I+D+i</h3>
+                        <p class="text-[#59636E] text-sm leading-relaxed">
+                            Estructuración de proyectos de innovación, búsqueda activa de financiamiento internacional y acreditación de centros de desarrollo.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[#D8D4CF]/40 text-xs font-semibold text-[#243B53] flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-[#243B53]"></span> Impacto y convocatorias
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Contacto Directo -->
-    <section id="contacto" class="py-24 bg-artistic text-center">
-        <div class="max-w-3xl mx-auto px-6 space-y-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-[#243B53]">Llevemos tu organización al siguiente nivel</h2>
-            <p class="text-[#59636E]">
-                Conversemos sobre los retos operativos de tu empresa y cómo estructurarlos en proyectos de alto impacto.
-            </p>
-            <div class="pt-4">
-                <a href="mailto:pmo.sotelo@gmail.com" class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#243B53] text-[#F5F1E9] font-medium hover:bg-[#A64B45] transition-all shadow-lg text-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                    Envíame un correo directo
-                </a>
+    <!-- Trayectoria Destacada -->
+    <section id="trayectoria" class="py-24 bg-white border-t border-[#D8D4CF]">
+        <div class="max-w-6xl mx-auto px-6 space-y-12">
+            <div class="text-center space-y-3">
+                <span class="text-xs uppercase tracking-widest text-[#A64B45] font-semibold">Respaldo Institucional</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#243B53]">Trayectoria Clave</h2>
+                <p class="text-[#59636E]">Experiencia directiva en organizaciones públicas, privadas e internacionales.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="py-8 bg-white text-center text-xs text-[#59636E] border-t border-[#D8D4CF]/60">
-        <p>&copy; 2026 Miyi Paola Sotelo P. (MP StratOps). Todos los derechos reservados.</p>
-    </footer>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- SEI -->
+                <div class="p-8 rounded-3xl bg-[#F5F1E9]/50 border border-[#D8D4CF] space-y-3">
+                    <div class="flex justify-between items-center text-xs text-[#59636E]">
+                        <span class="font-semibold text-[#A64B45]">Stockholm Environment Institute (SEI)</span>
+                        <span>2021 - 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#243B53]">Reconocimiento Centro de Innovación (CIP)</h3>
+                    <p class="text-sm text-[#59636E] leading-relaxed">
+                        Estructuración y liderazgo integral del proceso para la acreditación de SEI Latinoamérica ante MinCiencias bajo los lineamientos de política de CTeI.
+                    </p>
+                </div>
 
-</body>
-</html>
+                <!-- Roccap -->
+                <div class="p-
