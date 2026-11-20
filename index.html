@@ -23,12 +23,16 @@
             serif: ['DM Serif Display', 'serif']
           },
           colors: {
-            bosque: '#173B45',
-            salvia: '#91A99A',
-            arena: '#EDE8DE',
-            marfil: '#FAF9F5',
-            terracota: '#B87962',
-            tinta: '#35464A'
+            bosque: '#173B45',       // Azul petróleo
+            salvia: '#91A99A',       // Verde salvia
+            arena: '#EDE8DE',        // Arena
+            marfil: '#FCFBF8',
+            terracota: '#5c0010',    // Borgoña profundo
+            tinta: '#35464A',
+            turquesa: '#2A7880',
+            mostaza: '#E6B957',
+            lavanda: '#B7A6D8',
+            menta: '#DCEBE3'
           }
         }
       }
@@ -40,14 +44,26 @@
     .font-serif { font-family: 'DM Serif Display', serif; }
     .soft-glow {
       background:
-        radial-gradient(circle at 12% 18%, rgba(145,169,154,.20), transparent 32%),
-        radial-gradient(circle at 88% 82%, rgba(184,121,98,.10), transparent 30%),
-        #FAF9F5;
+        radial-gradient(ellipse at 8% 12%, rgba(42,120,128,.17), transparent 34%),
+        radial-gradient(ellipse at 92% 78%, rgba(240,120,91,.15), transparent 32%),
+        radial-gradient(ellipse at 52% 48%, rgba(230,185,87,.09), transparent 38%),
+        #FCFBF8;
     }
+    .color-orbit {
+      background: conic-gradient(from 210deg, #91A99A, #2A7880, #B7A6D8, #5c0010, #E6B957, #91A99A);
+      opacity: .78;
+    }
+    .colorful-panel {
+      background: linear-gradient(135deg, rgba(220,235,227,.88), rgba(237,232,222,.92) 52%, rgba(255,235,226,.85));
+    }
+    .accent-line { background: linear-gradient(90deg, #91A99A, #2A7880, #5c0010, #E6B957); }
+    .service-card:nth-child(3) { border-top: 3px solid #2A7880; }
+    .service-card:nth-child(4) { border-top: 3px solid #E6B957; }
+    .service-card:nth-child(5) { border-top: 3px solid #B7A6D8; }
     .section-kicker { letter-spacing: .18em; }
     .service-card { transition: transform .25s ease, box-shadow .25s ease; }
     .service-card:hover { transform: translateY(-5px); box-shadow: 0 18px 45px rgba(23,59,69,.10); }
-    a:focus-visible, button:focus-visible { outline: 3px solid #B87962; outline-offset: 3px; }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #5c0010; outline-offset: 3px; }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
@@ -80,7 +96,7 @@
           <a href="https://www.linkedin.com/in/miyipaolasotelop/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-tinta hover:text-terracota text-xl transition-colors">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a href="mailto:pmo.sotelo@gmail.com" class="rounded-full bg-bosque hover:bg-terracota text-white px-5 py-3 text-[10px] uppercase tracking-widest font-bold transition-colors">
+          <a href="#contacto" class="rounded-full bg-bosque hover:bg-terracota text-white px-5 py-3 text-[10px] uppercase tracking-widest font-bold transition-colors">
             Conversemos
           </a>
         </div>
@@ -95,7 +111,7 @@
         <a class="mobile-link block" href="#enfoque">Enfoque</a>
         <a class="mobile-link block" href="#trayectoria">Trayectoria</a>
         <a class="mobile-link block" href="#contacto">Contacto</a>
-        <a href="mailto:pmo.sotelo@gmail.com" class="block rounded-full bg-bosque text-white text-center py-3">Conversemos</a>
+        <a href="#contacto" class="mobile-link block rounded-full bg-bosque text-white text-center py-3">Conversemos</a>
       </nav>
     </div>
   </header>
@@ -110,10 +126,10 @@
             Transformamos conocimiento en <em class="text-terracota not-italic">posibilidades de desarrollo.</em>
           </h1>
           <p class="mt-7 max-w-2xl mx-auto lg:mx-0 text-base sm:text-lg leading-relaxed text-tinta">
-            Acompaño a tu organización a convertir conocimiento, capacidades e ideas en proyectos y programas estratégicos que impulsan la innovación, fortalecen organizaciones y generan resultados sostenibles.
+            Acompaño a tu organización a convertir conocimiento, capacidades e ideas en proyectos y programas estratégicos que impulsen la innovación y generen resultados sostenibles.
           </p>
           <p class="mt-4 text-sm text-tinta/80 max-w-xl mx-auto lg:mx-0">
-            Conecto estrategia, gestión y conocimiento para llevar las ideas a la acción.
+         
           </p>
           <div class="mt-9 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
             <a href="#contacto" class="inline-flex items-center justify-center gap-3 rounded-full bg-bosque hover:bg-terracota text-white px-7 py-4 text-xs uppercase tracking-widest font-bold transition-colors">
@@ -124,7 +140,7 @@
             </a>
           </div>
           <div class="mt-12 pt-7 border-t border-bosque/15 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
-            <div><p class="font-serif text-3xl sm:text-4xl">+10</p><p class="mt-1 text-[9px] sm:text-[10px] uppercase tracking-widest text-tinta">Años de experiencia</p></div>
+            <div><p class="font-serif text-3xl sm:text-4xl">+8</p><p class="mt-1 text-[9px] sm:text-[10px] uppercase tracking-widest text-tinta">Años de experiencia</p></div>
             <div><p class="font-serif text-3xl sm:text-4xl text-terracota">PMO</p><p class="mt-1 text-[9px] sm:text-[10px] uppercase tracking-widest text-tinta">Diseño y gestión</p></div>
             <div><p class="font-serif text-3xl sm:text-4xl">I+D+i</p><p class="mt-1 text-[9px] sm:text-[10px] uppercase tracking-widest text-tinta">Innovación</p></div>
           </div>
@@ -132,11 +148,11 @@
 
         <div class="lg:col-span-5 flex justify-center lg:justify-end">
           <div class="relative w-full max-w-[420px]">
-            <div class="absolute -inset-4 rounded-[2.5rem] border border-salvia/50 rotate-3"></div>
+            <div class="absolute -inset-4 rounded-[2.5rem] color-orbit rotate-3"></div>
             <div class="relative overflow-hidden rounded-[2rem] bg-arena shadow-xl">
               <img src="Corporativa_2.jpg" alt="Miyi Paola Sotelo Prieto, consultora en gestión estratégica" class="w-full h-[430px] sm:h-[510px] object-cover object-top">
               <div class="absolute inset-x-0 bottom-0 p-7 bg-gradient-to-t from-bosque/95 via-bosque/60 to-transparent text-white">
-                <p class="text-[10px] uppercase tracking-[.2em] text-salvia font-bold">Estrategia con sentido</p>
+                <p class="text-[10px] uppercase tracking-[.2em] text-salvia font-bold">Estrategia con propósito</p>
                 <p class="font-serif text-2xl mt-2">Miyi Paola Sotelo Prieto</p>
                 <p class="text-xs text-white/80 mt-1">Consultora en proyectos, programas e innovación</p>
               </div>
@@ -156,17 +172,17 @@
       <div class="max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-12 gap-10 lg:gap-16 items-start">
         <div class="md:col-span-4">
           <p class="section-kicker text-[10px] uppercase font-bold text-terracota mb-4">La mirada detrás de MP StratOps</p>
-          <h2 class="font-serif text-4xl sm:text-5xl leading-tight">Estrategia con una <em class="text-terracota not-italic">mirada humana.</em></h2>
-          <div class="w-16 h-1 bg-salvia mt-7 rounded-full"></div>
+          <h2 class="font-serif text-4xl sm:text-5xl leading-tight">Estrategia con una <em class="text-terracota not-italic">mirada integral.</em></h2>
+          <div class="w-20 h-1 accent-line mt-7 rounded-full"></div>
         </div>
         <div class="md:col-span-8 text-tinta leading-relaxed space-y-5 text-[15px]">
           <p class="text-xl sm:text-2xl font-serif text-bosque leading-snug">
-            Creo en el conocimiento como motor de transformación y en la gestión como el puente que convierte las ideas en resultados.
+            Creo en la posibilidad de generar transformación a partir de la gestión, el conocimiento y la interdisciplinariedad.
           </p>
           <p>Soy Miyi Paola Sotelo Prieto, profesional en Finanzas y Relaciones Internacionales, especialista en Gerencia de Proyectos e Inteligencia de Negocios y magíster en Planificación y Gestión de Procesos Empresariales.</p>
-          <p>Cuento con más de 10 años de experiencia acompañando organizaciones en la estructuración, planificación y gestión de iniciativas estratégicas, institucionales, sociales y de innovación.</p>
-          <p>Mi trabajo consiste en comprender los desafíos de cada organización, conectar capacidades, estructurar soluciones y acompañar su implementación, integrando estrategia, procesos, recursos e indicadores.</p>
-          <p>Me interesa especialmente contribuir a iniciativas que fortalezcan organizaciones, impulsen la innovación y generen valor para las personas y sus comunidades.</p>
+          <p>Cuento con más de 8 años de experiencia acompañando organizaciones en la estructuración, planificación y gestión de iniciativas estratégicas, institucionales, sociales y de innovación para fortalecer sus objetivos internos y generar valor para la sociedad.</p>
+          <p>Mi trabajo consiste en comprender los desafíos de tu organización, comprender y conectar capacidades, estructurar soluciones y acompañar su implementación, integrando estrategia, procesos, recursos e indicadores.</p>
+     
           <div class="pt-3 border-l-2 border-terracota pl-5">
             <p class="font-serif italic text-xl text-bosque">Mi propósito: hacer que las buenas ideas encuentren estructura, dirección y posibilidades reales de desarrollo.</p>
           </div>
@@ -178,12 +194,12 @@
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="py-20 sm:py-28 soft-glow">
+    <section id="servicios" class="py-20 sm:py-28 soft-glow relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-5 sm:px-8">
         <div class="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
           <p class="section-kicker text-[10px] uppercase font-bold text-terracota mb-4">Cómo puedo acompañarte</p>
           <h2 class="font-serif text-4xl sm:text-5xl">Conocimiento que se convierte en <em class="text-terracota not-italic">acción.</em></h2>
-          <p class="mt-5 text-tinta leading-relaxed">Diseño soluciones a la medida de cada organización, integrando estrategia, conocimiento y gestión para convertir desafíos en oportunidades de desarrollo.</p>
+          <p class="mt-5 text-tinta leading-relaxed">Diseño soluciones a la medida de cada organización, integrando estrategia, estructura, conocimiento y gestión de procesos y proyectos para llevar tus ideas a la acción.</p>
         </div>
 
         <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
@@ -200,7 +216,7 @@
             </ul>
           </article>
 
-          <article class="service-card bg-bosque text-white rounded-3xl p-7 border border-bosque flex flex-col">
+          <article class="service-card bg-gradient-to-br from-bosque via-bosque to-turquesa text-white rounded-3xl p-7 border border-bosque flex flex-col">
             <span class="text-salvia text-2xl"><i class="fa-solid fa-sitemap"></i></span>
             <p class="mt-6 text-[10px] uppercase tracking-widest text-salvia font-bold">02 · Fortalecimiento</p>
             <h3 class="font-serif text-2xl mt-3 mb-4">Desarrollo organizacional</h3>
@@ -219,10 +235,9 @@
             <h3 class="font-serif text-2xl mt-3 mb-4">Innovación y conocimiento</h3>
             <p class="text-sm leading-relaxed text-tinta">Conecto conocimiento, capacidades y oportunidades para impulsar procesos de innovación y desarrollo.</p>
             <ul class="mt-6 space-y-3 text-xs text-tinta">
-              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Estructuración de iniciativas de I+D+i</li>
-              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Gestión y transferencia de conocimiento</li>
-              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Metodologías y modelos de intervención</li>
-              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Fortalecimiento de capacidades para CIP</li>
+              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Estructuración de iniciativas de Ciencia, Tecnología e Innovación</li>
+              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Implementación de modelos de transferencia de conocimiento</li>
+              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Fortalecimiento de capacidades para implementar la gestión de la innovación</li>
             </ul>
           </article>
 
@@ -234,8 +249,7 @@
             <ul class="mt-6 space-y-3 text-xs text-tinta">
               <li><i class="fa-solid fa-check text-salvia mr-2"></i>Alianzas estratégicas</li>
               <li><i class="fa-solid fa-check text-salvia mr-2"></i>Articulación interinstitucional</li>
-              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Programas de fortalecimiento</li>
-              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Proyectos de desarrollo social y territorial</li>
+              <li><i class="fa-solid fa-check text-salvia mr-2"></i>Programas de fortalecimiento de capacidades y habilidades blandas</li>
             </ul>
           </article>
         </div>
@@ -243,7 +257,7 @@
     </section>
 
     <!-- Enfoque -->
-    <section id="enfoque" class="py-20 sm:py-28 bg-white">
+    <section id="enfoque" class="py-20 sm:py-28 colorful-panel">
       <div class="max-w-7xl mx-auto px-5 sm:px-8">
         <div class="grid lg:grid-cols-5 gap-12 items-end mb-14">
           <div class="lg:col-span-3">
@@ -277,69 +291,64 @@
       </div>
     </section>
 
-    <!-- Trayectoria -->
-    <section id="trayectoria" class="py-20 sm:py-28 bg-arena/60">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8">
-        <div class="max-w-3xl mb-14">
-          <p class="section-kicker text-[10px] uppercase font-bold text-terracota mb-4">Experiencia y trayectoria</p>
-          <h2 class="font-serif text-4xl sm:text-5xl">Experiencia al servicio de <em class="text-terracota not-italic">nuevas posibilidades.</em></h2>
-          <p class="mt-5 text-tinta leading-relaxed">Una trayectoria que integra gestión estratégica, fortalecimiento institucional, innovación y desarrollo de iniciativas con impacto.</p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-5">
-          <article class="bg-marfil rounded-3xl p-8 border border-white">
-            <p class="text-[10px] uppercase tracking-widest text-terracota font-bold">Innovación y desarrollo institucional</p>
-            <h3 class="font-serif text-2xl mt-3">Estructuración para el reconocimiento de capacidades de innovación</h3>
-            <p class="mt-4 text-sm leading-relaxed text-tinta">Acompañamiento en el análisis de brechas, fortalecimiento estratégico y estructuración de capacidades institucionales para procesos relacionados con Centros de Innovación y Productividad.</p>
-          </article>
-          <article class="bg-marfil rounded-3xl p-8 border border-white">
-            <p class="text-[10px] uppercase tracking-widest text-terracota font-bold">Gobernanza y gestión</p>
-            <h3 class="font-serif text-2xl mt-3">Diseño y fortalecimiento de PMO</h3>
-            <p class="mt-4 text-sm leading-relaxed text-tinta">Diseño de metodologías, herramientas de seguimiento, tableros de control y mecanismos para la gestión de portafolios y proyectos.</p>
-          </article>
-          <article class="bg-marfil rounded-3xl p-8 border border-white">
-            <p class="text-[10px] uppercase tracking-widest text-terracota font-bold">Cooperación y desarrollo</p>
-            <h3 class="font-serif text-2xl mt-3">Gestión de portafolios e iniciativas de impacto</h3>
-            <p class="mt-4 text-sm leading-relaxed text-tinta">Seguimiento de hitos, presupuestos, indicadores y resultados en proyectos desarrollados con organizaciones y aliados nacionales e internacionales.</p>
-          </article>
-          <article class="bg-marfil rounded-3xl p-8 border border-white">
-            <p class="text-[10px] uppercase tracking-widest text-terracota font-bold">Evaluación técnica</p>
-            <h3 class="font-serif text-2xl mt-3">Evaluación de programas y proyectos de I+D+i</h3>
-            <p class="mt-4 text-sm leading-relaxed text-tinta">Análisis metodológico y evaluación de propuestas vinculadas con innovación, desarrollo tecnológico y fortalecimiento de capacidades institucionales.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
+   
     <!-- Herramientas -->
-    <section id="herramientas" class="py-16 sm:py-20 bg-bosque text-white">
+    <section id="herramientas" class="py-16 sm:py-20 bg-bosque text-white relative overflow-hidden">
+      <div class="absolute -right-20 -top-24 w-80 h-80 rounded-full blur-3xl bg-turquesa/25"></div>
+      <div class="absolute -left-20 -bottom-28 w-72 h-72 rounded-full blur-3xl bg-terracota/20"></div>
       <div class="max-w-6xl mx-auto px-5 sm:px-8">
         <div class="text-center max-w-2xl mx-auto mb-10">
           <p class="section-kicker text-[10px] uppercase font-bold text-salvia mb-4">Recursos para hacerlo posible</p>
-          <h2 class="font-serif text-3xl sm:text-4xl">Método, herramientas y aprendizaje continuo.</h2>
+          <h2 class="font-serif text-3xl sm:text-4xl">Métodos, herramientas y aprendizaje continuo.</h2>
           <p class="mt-4 text-sm text-white/70">Integro metodologías y herramientas según las necesidades y la madurez de cada organización.</p>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-list-check text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">ClickUp</p></div>
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-table-columns text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">Monday.com</p></div>
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-note-sticky text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">Notion</p></div>
+          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-list-check text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">Microsoft Office</p></div>
           <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-chart-line text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">Dashboards y KPI</p></div>
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-wand-magic-sparkles text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">IA y No-Code</p></div>
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-diagram-project text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">Agile / PMBOK</p></div>
+          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-wand-magic-sparkles text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">ClickUp / Monday / Notion</p></div>
+          <div class="rounded-2xl border border-white/15 bg-white/5 p-5 text-center"><i class="fa-solid fa-diagram-project text-2xl text-salvia"></i><p class="mt-3 text-xs font-semibold">Lean Management / Scrum / PMBOK</p></div>
         </div>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="soft-glow py-20 sm:py-28 text-center">
+    <section id="contacto" class="soft-glow py-20 sm:py-28">
       <div class="max-w-4xl mx-auto px-5 sm:px-8">
-        <p class="section-kicker text-[10px] uppercase font-bold text-terracota mb-5">Empecemos una conversación</p>
-        <h2 class="font-serif text-4xl sm:text-6xl leading-tight">Las ideas tienen potencial. <em class="text-terracota not-italic">La gestión las hace posibles.</em></h2>
-        <p class="mt-6 max-w-2xl mx-auto text-tinta leading-relaxed">Acompaño a tu organización a identificar su potencial, darle dirección y transformarlo en proyectos y programas con propósito.</p>
-        <p class="mt-3 font-serif text-2xl">Construyamos nuevas posibilidades.</p>
-        <div class="mt-9 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="mailto:pmo.sotelo@gmail.com" class="inline-flex items-center justify-center gap-3 rounded-full bg-bosque hover:bg-terracota text-white px-7 py-4 text-xs uppercase tracking-widest font-bold transition-colors">
-            <i class="fa-regular fa-envelope text-base"></i> pmo.sotelo@gmail.com
-          </a>
+        <div class="text-center">
+          <p class="section-kicker text-[10px] uppercase font-bold text-terracota mb-5">Empecemos una conversación</p>
+          <h2 class="font-serif text-4xl sm:text-6xl leading-tight">Las ideas tienen potencial. <em class="text-terracota not-italic">La gestión las hace posibles.</em></h2>
+          <p class="mt-3 font-serif text-2xl">Construyamos nuevas posibilidades.</p>
+          <p class="mt-4 text-sm text-tinta">Cuéntame brevemente sobre tu organización y cómo puedo acompañarte.</p>
+        </div>
+
+        <form action="https://formsubmit.co/pmo.sotelo@gmail.com" method="POST" class="mt-10 max-w-2xl mx-auto bg-white rounded-3xl p-6 sm:p-9 shadow-xl shadow-bosque/10 border border-arena text-left">
+          <input type="hidden" name="_subject" value="Nueva consulta desde el sitio web de MP StratOps">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="contact-name" class="block text-xs font-bold text-bosque mb-2">Nombre</label>
+              <input id="contact-name" type="text" name="Nombre" required autocomplete="name" class="w-full rounded-xl border border-arena bg-marfil px-4 py-3 text-sm text-bosque placeholder:text-tinta/50 focus:outline-none focus:ring-2 focus:ring-turquesa" placeholder="Tu nombre">
+            </div>
+            <div>
+              <label for="contact-company" class="block text-xs font-bold text-bosque mb-2">Empresa u organización</label>
+              <input id="contact-company" type="text" name="Empresa" required autocomplete="organization" class="w-full rounded-xl border border-arena bg-marfil px-4 py-3 text-sm text-bosque placeholder:text-tinta/50 focus:outline-none focus:ring-2 focus:ring-turquesa" placeholder="Nombre de la organización">
+            </div>
+          </div>
+          <div class="mt-5">
+            <label for="contact-message" class="block text-xs font-bold text-bosque mb-2">Consulta</label>
+            <textarea id="contact-message" name="Consulta" rows="5" required class="w-full rounded-xl border border-arena bg-marfil px-4 py-3 text-sm text-bosque placeholder:text-tinta/50 focus:outline-none focus:ring-2 focus:ring-turquesa resize-y" placeholder="Cuéntame qué necesitas o qué proyecto tienes en mente..."></textarea>
+          </div>
+          <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-tinta/70">La información será enviada para responder a tu consulta.</p>
+            <button type="submit" class="inline-flex items-center justify-center gap-3 rounded-full bg-terracota hover:bg-bosque text-white px-8 py-4 text-xs uppercase tracking-widest font-bold transition-colors shadow-lg shadow-terracota/20">
+              Enviar consulta <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="mt-7 text-center">
           <a href="https://wa.me/541134151401" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 rounded-full border border-bosque/20 hover:border-bosque px-7 py-4 text-xs uppercase tracking-widest font-bold transition-colors">
             <i class="fa-brands fa-whatsapp text-lg text-terracota"></i> Hablemos por WhatsApp
           </a>
